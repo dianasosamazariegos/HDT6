@@ -65,6 +65,7 @@ public class HDT6 {
         }
         
         //Creacion de los mapas
+        
         Map<String,String> tCartas = mapFactory.getMap(tipoMap);
         Map<String,String> coleccion = mapFactory.getMap(tipoMap);
         
@@ -78,7 +79,8 @@ public class HDT6 {
                 String[] outputArray = output.split("\\|");
 		
                 tCartas.put(outputArray[0], outputArray[1]);
-            } 
+            
+            }
             
         } catch (IOException e) {
                 e.printStackTrace();
@@ -153,9 +155,7 @@ public class HDT6 {
             inputNombre = scan.nextLine();
             
             if (tCartas.containsKey(inputNombre)){
-               
                 inputTipo = tCartas.get(inputNombre);
-                
                 System.out.println("Tipo de carta: "+inputTipo);
                 
             } else {
@@ -283,10 +283,7 @@ public class HDT6 {
                     } else if (entry.getValue().equals("Hechizo")) {
                         
                         hechizos.add(entry.getKey());
-                    } else {
-                        
-                        System.out.println("<!> Error found in file (option 4)");
-                    }
+                    } 
                 }
                 
                 // se van a imprimir las cartas ordenadas por tipo Monstruo, luego Trampas y por ultimo hechizos

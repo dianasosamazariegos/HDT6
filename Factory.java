@@ -1,7 +1,7 @@
 /*
 Universidad del Valle de Guatemala
 Algoritmos y Estructuras de Datos
-Autor: Diana Sosa -Fecha: 10/03/2020
+Autor: Diana Sosa y Martin España -Fecha: 10/03/2020
  */
 package hdt6;
 
